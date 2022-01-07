@@ -7,7 +7,6 @@ import com.alibaba.excel.EasyExcel;
 import com.alibaba.excel.read.builder.ExcelReaderBuilder;
 
 import java.io.File;
-import java.nio.file.Files;
 
 /**
  * @author: z Date: 2022/1/7 Time: 18:32
@@ -16,10 +15,11 @@ import java.nio.file.Files;
 public class FundamentalAnalysis {
 
     public static void main(String[] args) {
-        EasyExcel.read();
+        final FundamentalAnalysis fundamentalAnalysis = new FundamentalAnalysis();
+        ExcelReaderBuilder readerBuilder = fundamentalAnalysis.read("");
     }
 
-    public ExcelReaderBuilder read(String filePath){
+    public ExcelReaderBuilder read(String filePath) {
         return EasyExcel.read(new File(filePath));
     }
 }
