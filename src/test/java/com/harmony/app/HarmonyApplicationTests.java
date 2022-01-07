@@ -1,4 +1,4 @@
-package com.harmony.app.harmony;
+package com.harmony.app;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

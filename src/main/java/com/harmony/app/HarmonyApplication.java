@@ -1,4 +1,4 @@
-package com.harmony.app.harmony;
+package com.harmony.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
